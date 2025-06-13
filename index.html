@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ardno Quiz Challenge - Win Real Cash!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ardno Quiz Challenge</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
-      color: #333;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    .banner-container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      background: #6aaed6;
+      color: #fff;
+      display: flex;
+      justify-content: center;
       padding: 2rem;
     }
 
-    h1 {
-      color: #e74c3c;
+    .container {
+      background: #ffffff;
+      border-radius: 20px;
+      max-width: 960px;
+      width: 100%;
+      color: #333;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .title {
       font-size: 1.8rem;
+      font-weight: bold;
+      text-align: center;
+      color: #ffcc00;
     }
 
-    h2 {
+    .subtitle {
+      font-size: 1.2rem;
+      text-align: center;
       color: #2c3e50;
-      font-size: 1.3rem;
-      margin-top: 1rem;
+      margin: 0.5rem 0 1.5rem;
     }
 
-    .section {
-      text-align: left;
-      margin-top: 1.5rem;
+    .highlight {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #ff9900;
+      text-align: center;
     }
 
-    .section ul {
-      padding-left: 1.2rem;
+    .info {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #444;
     }
 
-    .section strong {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-section {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-section h3 {
       color: #2980b9;
+      margin-bottom: 0.5rem;
+    }
+
+    .text-section ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 1rem;
+    }
+
+    .text-section ul li::before {
+      content: "✅ ";
+      color: #27ae60;
+    }
+
+    .text-section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .screenshot {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
 
     .store-buttons {
       margin-top: 2rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
+      text-align: center;
     }
 
     .store-buttons img {
       height: 60px;
+      margin: 0 0.5rem;
       transition: transform 0.3s ease;
     }
 
@@ -68,47 +114,52 @@
     }
 
     .footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
       margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="banner-container">
-    <h1>🎉 Ardno Quiz Challenge is Live – WIN! WIN!! WIN!!!</h1>
-    <h2>Challenge your mind. Climb the leaderboard. Win real cash rewards.</h2>
-    <p>📅 Challenge ends <strong>August 31, 2025</strong></p>
-    <p>📧 Finalists send score screenshots to: <br><strong>ardnotechapp@gmail.com</strong></p>
-
-    <div class="section">
-      <strong>🚀 Game Enhancements</strong>
-      <ul>
-        <li>Randomized Quiz Questions per session</li>
-        <li>Smooth Navigation with fixed header + back button</li>
-        <li>Mute Toggle for sound control</li>
-      </ul>
+  <div class="container">
+    <div class="title">We have officially launched</div>
+    <div class="highlight">ARDNO QUIZ CHALLENGE<br />WIN! WIN!! WIN!!</div>
+    <div class="subtitle">Challenge your mind. Climb the leaderboard. Win real cash rewards.</div>
+    <div class="info">
+      Challenge ends <strong>August 31, 2025</strong><br />
+      Top three finalists send score screenshots to: <strong>ardnotechapp@gmail.com</strong>
     </div>
 
-    <div class="section">
-      <strong>📊 Leaderboard Upgrades</strong>
-      <ul>
-        <li>Trophy Icons for Top 3 players</li>
-        <li>Clean Layout – names left, scores right</li>
-      </ul>
-    </div>
+    <div class="content">
+      <div class="text-section">
+        <h3>🔥 Key Features</h3>
+        <ul>
+          <li>Randomized quiz questions every round</li>
+          <li>Real-time leaderboard with trophy icons</li>
+          <li>Answer with fun, earn real rewards</li>
+        </ul>
+        <h3>🎁 Promo Bonus</h3>
+        <p>Win a <strong>$25 Gift Card</strong><br />+ $10 each for 2nd and 3rd runner-up!</p>
+      </div>
 
-    <div class="section">
-      <strong>📣 Promo Bonus</strong>
-      <p>Win a <strong>$25 Gift Card</strong> – Ends August 31!</p>
+      <div class="screenshot">
+        <img src="Ardno Quiz promotional image 2.png" alt="Ardno Quiz Screenshots" />
+      </div>
     </div>
 
     <div class="store-buttons">
       <a href="https://play.google.com/store/apps/details?id=com.ikhidan.quizgate" target="_blank" rel="noopener">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play" />
       </a>
       <a href="https://apps.apple.com/us/app/ardno-quiz-challenge/id6745230634" target="_blank" rel="noopener">
-        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" />
       </a>
     </div>
 
